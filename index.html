@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Estudiantes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Registro de Estudiantes 🎓</h1>
+
+        <form id="studentForm">
+            <input type="hidden" id="studentId">
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="text" id="lastname" placeholder="Apellido" required>
+            <input type="email" id="email" placeholder="Correo" required>
+            <button type="submit">Guardar</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Correo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="studentList"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
